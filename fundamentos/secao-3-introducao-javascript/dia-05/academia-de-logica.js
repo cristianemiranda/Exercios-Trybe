@@ -5,8 +5,6 @@
 function calcularAreaPerimetro(base , altura) {
 let perimetro = (2 * base) + (2 * altura);
 let area = base * altura ;
-resultado.area = area
-resultado.perimetro = perimetro
-return console.log (resultado)
+return console.log(area + perimetro);
 };
-(calcularAreaPerimetro(2,2))
+ (calcularAreaPerimetro(2,2))

@@ -7,4 +7,4 @@
 
 //fazer uma lista com todos os numeros completos ente 1 e 50
 
-let numerosCompletos []
+let numerosCompletos [] 
