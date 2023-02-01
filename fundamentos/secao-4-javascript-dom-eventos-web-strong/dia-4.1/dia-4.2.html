@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+const elementoH1 = document.createElement('h1');
+  elementoH1.innerText = 'TrybeTrip - Agência de Viagens';
+  document.body.appendChild(elementoH1);
+
+  const Main1 = document.createElement('main');
+    Main1.className = 'main-content';
+    document.body.appendChild(elementMain);
+
+  const elementoDoCentro = document.createElement('section');
+  elementoDoCentro.className = 'center-content';
+  elementMain.appendChild(elementoDoCentro);
+
+  const paragrafo1 = document.createElement('p');
+  paragrafo1.innerHTML = 'Texto Show';
+  elementSectionCenter.appendChild(paragrafo1);
+
+  const elemento1 = document.createElement('section');
+  elemento1.className = 'left-content';
+  elementMain.appendChild(elemento1);
+
+  const elemento2 = document.createElement('section');
+  elemento2.className = 'right-content';
+   elementMain.appendChild(elemento2);
+
+  const elementoComImagem = document.createElement('img');
+  elementoComImagem.className = 'small-image';
+  elementoComImagem.src = 'https://picsum.photos/200';
+  elementSectionLeft.appendChild(elementoComImagem);
+
+  const elemento3 = document.createElement('ul');
+  elementSectionRight.appendChild(elemento3);
+  const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+    'Sete', 'Oito', 'Nove', 'Dez']
+  for (let num in arrayNumbers) {
+    const elementLi = document.createElement('li');
+    elementLi.innerHTML = arrayNumbers[num];
+    elemento3.appendChild(elementLi);
+  };
+
+  for (let index = 1; index <= 3; index += 1) {
+    const elementH3 = document.createElement('h3');
+    elementH3.innerHTML = 'Show ' + index;
+    elementMain.appendChild(elementH3);
+  };
+
+<script>
+ 
+  
+</script>
+
+<!-- [...] -->
+
+
+    </script>
+  </body>
+</html>
